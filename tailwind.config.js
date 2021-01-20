@@ -1,7 +1,11 @@
 module.exports = {
-    purge: [
-        './dist/index.html'
-    ],
+    purge: {
+        // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+        enabled: true,
+        content: [
+          'src/**.html',
+        ]
+    },
     darkMode: false,
     theme: {
         extend: {
@@ -18,22 +22,27 @@ module.exports = {
                 'forth': '#E9F7D6',
 
                 'fifth': '#024659',
-
+                'white':'#FFFFFF',
                 'hightlight': '#E1007A',
 
                 'blue-corp': '#0199C2',
-                'green-corp':'EDEFEE'
+                'green-corp':'EDEFEE',
+                'dark-green': '#0C3E49',
             }),
 
             textColor: theme => theme('colors'),
 
             textColor: {
+                
 
                 'pink-corp': '#E1007A',
 
                 'blue-corp': '#0199C2',
 
                 'danger': '#e3342f',
+
+                'dark-green': '#0C3E49',
+                
 
             },
             fontFamily: {
@@ -51,17 +60,31 @@ module.exports = {
 
                 'pink-corp': '#E1007A',
 
-                'danger': '#e3342f',
+                'dark-green': '#0C3E49',
             }),
             spacing: {
+                '38':'9.5rem',
+                '77':'18.5rem',
                 '85':'22rem',
+                '98':'27rem',
                 '100': '30rem',
+                '120':'35rem',
        
               },
               fontSize: {
 
                 '2xxl': '1.70rem',
-              }
+                '8xl': '5.25rem'
+              },
+              lineHeight: {
+                '4.5':'1.12rem',
+                '14': '5rem',
+                '16': '5.5rem',
+               },
+               margin: {
+
+                    '18':'4.5rem',
+               }
         }
     },
     variants: {

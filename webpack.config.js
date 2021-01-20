@@ -1,27 +1,30 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const BrotliPlugin = require('brotli-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "assets/bundle.js",
     },
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.css$/,
                 use: [
-                    "style-loader",
-                    { loader: "css-loader", options: { importLoaders: 1 } },
-                    "postcss-loader",
-                ],
-            },
+                  MiniCssExtractPlugin.loader,
+                  "css-loader", "postcss-loader",
+                  ],
+              },
             {
                 test: /\.html$/,
                 use: "html-loader"
             },
             {
-                test: /\.(gif|png|jpe?g)$/i,
+                test: /\.(gif|png|jpe?g|webp)$/i,
                 exclude: /node_modules/,
                 use: [{
                     loader: 'file-loader',
@@ -35,10 +38,60 @@ module.exports = {
 
         ],
     },
+    optimization: {
+        minimize: true,
+        minimizer: [
+          // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+          // `...`,
+          new CssMinimizerPlugin(),
+        ],
+      },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './dist/index.html',
+            template: './src/index.html',
+            minify : {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
         }),
+        new HtmlWebpackPlugin({
+            template: './src/privacy.html',
+            filename : 'privacy.html',
+            minify : {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/cookies.html',
+            filename : 'cookies.html',
+            minify : {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
+        new BrotliPlugin({
+            asset: '[path].br[query]',
+            test: /\.(js|css|html|svg|png|webp)$/,
+            threshold: 10240,
+            minRatio: 0.8
+        }),
+        new MiniCssExtractPlugin({
+            filename: "styles.css",
+            chunkFilename: "styles.css"
+          }),
     ],
 
     devServer: {

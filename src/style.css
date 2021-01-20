@@ -3,99 +3,134 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
-.list-blue {
-  list-style-image: url("./img/bluePlus.png");
-}
 
-.list-green {
-  list-style-image: url("./img/greenPlus.png");
-}
+@layer utilities {
+  .list-blue {
+    list-style-image: url("./img/bluePlus.png");
+  }
 
-.list-pink {
-  list-style-image: url("./img/pinkPlus.png");
-}
+  .list-green {
+    list-style-image: url("./img/greenPlus.png");
+  }
 
-.font-bold-max {
-  font-weight: 800;
-}
+  .list-pink {
+    list-style-image: url("./img/pinkPlus.png");
+  }
 
-.grid-list {
-  grid-template-columns: 6% 15% 7% auto;
-}
+  .list-numbers {
+    color: #e1007a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
 
-.grid-list2 {
-  grid-template-columns: 10% auto;
-}
+  .font-bold-max {
+    font-weight: 800;
+  }
 
-.grid-smebook {
-  grid-template-columns: 50% auto;
-}
+  .btn-home {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
-.grid-do2 {
-  grid-template-columns: 0% 45% auto;
-}
+  @variants responsive {
+    .grid-list {
+      grid-template-columns: 6% 20% 7% auto;
+    }
 
-.grid-do {
-  grid-template-columns: 10% 40% 50%;
-}
-.grid-contact {
-  grid-template-columns: 5% auto;
-}
+    .grid-list2 {
+      grid-template-columns: 15% auto;
+    }
 
-.cont2 {
-  width: 100%;
-  max-width: 1100px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .grid-why {
+      grid-template-columns: 25% auto;
+    }
 
-.cont {
-  width: 100%;
-  max-width: 500px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .grid-do2 {
+      grid-template-columns: 0% 45% auto;
+    }
 
-.cont-asoc {
-  width: 100%;
-  max-width: 800px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .grid-do {
+      grid-template-columns: 10% 40% 50%;
+    }
+    .grid-contact {
+      grid-template-columns: 5% auto;
+    }
+    .grid-line {
+      grid-template-columns: 48% 2% auto;
+    }
 
-.cont-list {
-  width: 100%;
-  max-width: 600px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .grid-footer {
+      grid-template-columns: 35% auto;
+    }
 
-.cont-cont {
-  width: 100%;
-  max-width: 300px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .cont2 {
+      width: 100%;
+      max-width: 1100px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
 
-.cont-list2 {
-  width: 100%;
-  max-width: 800px;
-  box-sizing: content-box;
-  margin-top: 5px;
-  display: block;
-  margin: 0 auto;
-}
+    .cont {
+      width: 100%;
+      max-width: 600px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
 
-.img {
-  width: 400px;
+    .cont-asoc {
+      width: 100%;
+      max-width: 800px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cont-list {
+      width: 100%;
+      max-width: 600px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cont-cont {
+      width: 100%;
+      max-width: 400px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cont-list2 {
+      width: 100%;
+      max-width: 800px;
+      box-sizing: content-box;
+      margin-top: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+    .line {
+      border-left: 1px solid #e1007a;
+    }
+  }
+}
+#preloadedImages {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background-image: url(img/logoGris2.webp);
+  background-image: url(img/logoGris.webp);
+  background-image: url(img/logo.webp);
+  background-image: url(img/logoMoustache.webp);
 }
