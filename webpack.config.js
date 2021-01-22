@@ -3,6 +3,8 @@ const path = require("path");
 const BrotliPlugin = require('brotli-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
+
 
 module.exports = {
     entry: "./src/index.js",
@@ -35,7 +37,20 @@ module.exports = {
                     }
                 }]
             },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'fonts/',
+                      publicPath: 'fonts/'
 
+                    }
+                  }
+                ]
+              }
         ],
     },
     optimization: {
@@ -44,7 +59,7 @@ module.exports = {
           // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
           // `...`,
           new CssMinimizerPlugin(),
-        ],
+        ],      
       },
     plugins: [
         new HtmlWebpackPlugin({
@@ -92,6 +107,7 @@ module.exports = {
             filename: "styles.css",
             chunkFilename: "styles.css"
           }),
+          new HTMLInlineCSSWebpackPlugin(),
     ],
 
     devServer: {

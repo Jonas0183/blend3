@@ -7,14 +7,13 @@
     <meta name="description"
         content="Blendarsys, empresa de desarrollo de herramientas software para la investigación médica y biotecnologia.">
     <title>Blendarsys</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46256688-1"></script>
+    <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com">
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-46256688-1');
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-46256688-1', 'auto');
+        ga('send', 'pageview');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46256688-1"></script>
 </head>
 
 <body>
@@ -24,7 +23,7 @@
                 <img class="xl:pt-10" src="img/logoGris.webp" alt="Blendarsys">
             </div>
             <div>
-                <img class="block m-auto pt-5 sm:pt-16 w-36" src="img/logo.webp" alt="logo Blendarsys">
+                <img class="block m-auto pt-5" width="144" height="138" src="img/logo.webp" alt="logo Blendarsys">
                 <div class="flex flex-col ">
                     <h2
                         class="xl:pr-24 sm:text-3xl text-2xl font-bold text-right font-normal sm:pr-16 pr-5 pt-3 sm:pt-10 ">
@@ -33,7 +32,8 @@
                             software</span><br> a medida para ayudar a <br> la investigación médica <br> y
                         biotecnología.
                     </h2>
-                    <img class="xl:hidden sm:ml-10 ml-3 sm:w-120 w-85" src="img/logoGris2.webp" alt="Blendarsys">
+                    <img class="xl:hidden sm:ml-10 ml-3 sm:w-120 h-65 sm:h-97 w-85" src="img/logoGris2.webp"
+                        alt="Blendarsys">
                     <ul
                         class="xl:pl-10 sm:pl-24 sm:mr-10 text-left sm:text-base text-sm font-bold object-fill pr-10 content-center list-pink">
                         <li class="pt-10 pl-3 sm:ml-16 ml-8 xl:ml-7 font-normal xl:float-left sm:leading-6">
@@ -507,9 +507,10 @@
             <div class="grid order-4 xl:grid-line  pt-5">
                 <div class="cont-cont xl:cont-list2 xl:pr-5">
                     <p class="font-normal  font-bold-max ">Para contarnos su proyecto:</p>
-                    <p class="pl-6"><i><b>Rafael Palomino</b></i><br>
+                    <p class="pl-6 font-semibold leading-4.5"><span class="font-extrabold italic">Rafael
+                            Palomino</span><br>
                         Director de proyectos</p>
-                    <div class="grid grid-contact ">
+                    <div class="grid grid-contact mt-1">
                         <img class="pt-3" src="./img/mailicon.png" alt="mail">
                         <p class="font-normal pt-1 pl-2">
                             &#112;&#114;&#097;&#102;&#097;&#101;&#108;&#064;&#098;&#108;&#101;&#110;&#100;&#097;&#114;&#115;&#121;&#115;&#046;&#099;&#111;&#109;
@@ -519,10 +520,10 @@
                         <p class="font-normal pt-1 pl-2">633 978 686</p>
                     </div>
                     <div class="pt-2 xl:mt-5 pl-6"><a href="https://twitter.com/rafaelpalominop" target="_blank"
-                            rel="noopener"><img class="float-left" src="./img/tweeticon.webp"
+                            rel="noopener"><img class="float-left xl:w-8 xl:h-8" src="./img/tweeticon.webp"
                                 alt="Director's twitter"></a><a href="https://es.linkedin.com/in/rafaelpalominoperez/"
-                            target="_blank" rel="noopener"><img class="float-left pl-2" src="./img/linkicon.webp"
-                                alt="Director's linkedin"></a>
+                            target="_blank" rel="noopener"><img class="float-left pl-2 xl:w-8 xl:h-8"
+                                src="./img/linkicon.webp" alt="Director's linkedin"></a>
                     </div>
                 </div>
                 <div class="h-48 line hidden xl:grid"></div>
@@ -543,10 +544,11 @@
                             823 <br> 910
                             052 665 </p>
                     </div>
-                    <div class="pt-2 pl-6"><a href="https://twitter.com/blendarsys" target="_blank" rel="noopener"><img
-                                class="float-left" src="./img/tweeticon.webp" alt="Company's twitter"></a><a
-                            href="https://es.linkedin.com/company/blendarsys" target="_blank" rel="noopener"><img
-                                class="float-left pl-2" src="./img/linkicon.webp" alt="Company's linkedin"></a>
+                    <div class="pt-2 pl-6 "><a href="https://twitter.com/blendarsys" target="_blank" rel="noopener"><img
+                                class="float-left xl:w-8 xl:h-8" src="./img/tweeticon.webp"
+                                alt="Company's twitter"></a><a href="https://es.linkedin.com/company/blendarsys"
+                            target="_blank" rel="noopener"><img class="float-left xl:w-8 xl:h-8 pl-2"
+                                src="./img/linkicon.webp" alt="Company's linkedin"></a>
                     </div>
                 </div>
             </div>
