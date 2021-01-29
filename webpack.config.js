@@ -97,12 +97,25 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
-        new BrotliPlugin({
-            asset: '[path].br[query]',
-            test: /\.(js|css|html|svg|png|webp)$/,
-            threshold: 10240,
-            minRatio: 0.8
+        new HtmlWebpackPlugin({
+            template: './src/form.html',
+            filename : 'form.html',
+            minify : {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
         }),
+        
+        // new BrotliPlugin({
+        //     asset: '[path].br[query]',
+        //     test: /\.(js|css|html|svg|png|webp)$/,
+        //     threshold: 10240,
+        //     minRatio: 0.8
+        // }),
         new MiniCssExtractPlugin({
             filename: "styles.css",
             chunkFilename: "styles.css"

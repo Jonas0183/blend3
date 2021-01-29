@@ -1,6 +1,5 @@
 module.exports = {
     purge: {
-        // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
         enabled: true,
         content: [
           'src/**.html',
@@ -26,7 +25,7 @@ module.exports = {
                 'hightlight': '#E1007A',
 
                 'blue-corp': '#0199C2',
-                'green-corp':'EDEFEE',
+                'green-corp':'#EDEFEE',
                 'dark-green': '#0C3E49',
             }),
 
