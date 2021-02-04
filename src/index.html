@@ -128,21 +128,21 @@
                 </div>
             </div>
             <div class="content-center p-10 ">
-                <a href="#contact"><button
-                        class="border font-bold py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15">
-                        <p class="sm:w-96 xl:w-100 w-56 float-left  leading-4.5 sm:leading-5  sm:text-lg">Si piensa
-                            que una
-                            herramienta digital puede
-                            ayudarle en su proyecto, contacte con nosotros</p>
-                        <p
-                            class="float-left font-big sm:text-5xl text-3xl sm:mt-0 mt-4 xl:-mt-2 sm:ml-5 ml-2 -mr-3 sm:-mr-5">
-                            >>
-                        </p>
-                    </button></a>
+                <button onclick="div_show()"
+                    class="border popup font-bold py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15">
+                    <p class="sm:w-96 xl:w-100 w-56 float-left  leading-4.5 sm:leading-5  sm:text-lg">Si piensa
+                        que una
+                        herramienta digital puede
+                        ayudarle en su proyecto, contacte con nosotros</p>
+                    <p
+                        class="float-left font-big sm:text-5xl text-3xl sm:mt-0 mt-4 xl:-mt-2 sm:ml-5 ml-2 -mr-3 sm:-mr-5">
+                        >>
+                    </p>
+                </button>
             </div>
-            <div
+            <div id="anchor"
                 class="col-start-3 col-end-6 sm:p-10 p-3 text-blue-corp text-4xl sm:text-7xl font-bold-max font-normal">
-                <span class=" text-5xl sm:text-8xl">¿Cómo</span><br> trabajaremos?
+                <span class=" text-5xl sm:text-8xl">¿Cómo</span><br> trabajamos?
             </div>
             <div class="sm:pl-8 pl-3 xl:pl-0">
                 <div
@@ -205,7 +205,7 @@
         </div>
     </div>
     <div class="xl:cont2 cont">
-        <div class="grid xl:grid-cols-2 px-5 xl:px-0">
+        <!-- <div class="grid xl:grid-cols-2 px-5 xl:px-0">
             <h2
                 class=" order-1 sm:text-7xl text-5xl xl:px-0 px-8 font-normal pb-5 font-bold-max text-pink-corp pt-5 sm:pt-10">
                 ¿Qué
@@ -233,32 +233,31 @@
             </div>
             <img class="place-self-center sm:w-full w-72 px-5 sm:mt-3 order-2 row-span-2 " src="./img/masmenos.webp"
                 alt="simbolos">
-        </div>
+        </div> -->
         <div class="grid flex-col xl:grid-cols-2 sm:pt-5 pb-8 sm:pb-16">
-            <ul class="list-pink ml-5 sm:ml-10 xl:ml-16 sm:pt-4 pt-2 w-80 sm:w-100 xl:w-72">
-                <li class="font-normal text-lg sm:text-2xl sm:mr-0 mr-18 py-5 ml-10 sm:ml-20 xl:ml-0">
+            <ul class="list-pink ml-5 sm:ml-10 xl:ml-16 sm:pt-4 pt-2 w-80 sm:w-100 xl:w-85">
+                <li class="font-normal text-lg sm:text-2xl sm:mr-0 mr-18 py-5 ml-10 sm:ml-20 xl:ml-10">
                     Si cree que una herramienta software es lo que necesita
                 </li>
             </ul>
-            <a href="#contact"><button class="border  font-bold w-72 sm:w-80 py-1 sm:py-1 px-2 sm:px-5  xl:mt-10 ml-12 sm:ml-28 xl:ml-0 border-pink-corp sm:mb-1  hover:border-transparent bg-transparent 
-                    hover:bg-hightlight  text-pink-corp hover:text-white rounded-full ">
-                    <p class="w-56 float-left leading-4.5 sm:leading-5  sm:text-lg"> Cuéntenos su proyecto y
-                        trataremos de diseñar la
-                        solución</p>
-                    <p class="float-left font-big text-5xl sm:pl-3 sm:pt-0.5">>></p>
-                </button>
-            </a>
-            <ul class=" list-pink ml-5 sm:ml-10 xl:ml-16 pt-4 w-72 sm:w-100 xl:w-72">
-                <li class="font-normal text-lg sm:text-2xl py-5 sm:mr-0 mr-14 ml-10 sm:ml-20 xl:ml-0">
+            <button onclick="div_show()" class="border font-bold w-72 sm:w-80  px-2 sm:px-5  xl:mt-5 ml-12 sm:ml-28 xl:ml-0 border-pink-corp sm:mb-1  hover:border-transparent bg-transparent 
+                hover:bg-hightlight popup  text-pink-corp hover:text-white rounded-full ">
+                <p class="w-56 float-left leading-4.5 sm:leading-5  sm:text-lg"> Cuéntenos su proyecto y
+                    trataremos de diseñar la
+                    solución</p>
+                <p class="float-left font-big text-5xl sm:pl-3 sm:pt-0.5">>></p>
+            </button>
+            <ul class=" list-pink ml-5 sm:ml-10 xl:ml-16 pt-4 w-72 sm:w-100 xl:w-96">
+                <li class="font-normal text-lg sm:text-2xl py-5 sm:mr-0 mr-14 ml-10 sm:ml-20 xl:ml-10">
                     Si no esta seguro de que la herramienta software sea la solución
                 </li>
             </ul>
-            <a href="#contact"><button class="border sm:w-80 w-72 font-bold py-1 px-2 sm:px-5  xl:mt-10 ml-10 sm:ml-28 xl:ml-0 border-pink-corp mb-1  hover:border-transparent bg-transparent 
+            <button onclick="div_show()" class="border popup  sm:w-80 w-72 font-bold px-2 sm:px-5  xl:mt-5 ml-10 sm:ml-28 xl:ml-0 border-pink-corp mb-1  hover:border-transparent bg-transparent 
                 hover:bg-hightlight  text-pink-corp hover:text-white rounded-full ">
-                    <p class="w-56 float-left leading-4.5 sm:leading-5 sm:text-lg">Cuéntenos su proyecto y <br> le
-                        ayudaremos a <br> averiguarlo</p>
-                    <p class="float-left font-big text-5xl pb-1 sm:pl-3 sm:-mt-3 mt-0.5  sm:pt-4">>></p>
-                </button></a>
+                <p class="w-56 float-left leading-4.5 sm:leading-5 sm:text-lg -my-10">Cuéntenos su proyecto y <br> le
+                    ayudaremos a <br> averiguarlo</p>
+                <p class="float-left font-big text-5xl pb-1 sm:pl-3 sm:-mt-3 mt-0.5  sm:pt-4">>></p>
+            </button>
         </div>
     </div>
     <div class="bg-green-corp">
@@ -492,7 +491,7 @@
         </div>
     </div>
     <div class="xl:cont2 cont">
-        <div id="contact" class="grid xl:grid-cols-2 pt-5 px-2 sm:px-5 xl:px-0">
+        <div class="grid xl:grid-cols-2 pt-5 px-2 sm:px-5 xl:px-0">
             <img class=" grid xl:order-1 order-3 place-self-center px-10 sm:w-full sm:pt-5 pt-2  xl:row-span-3 "
                 src="./img/talks.webp" alt="">
             <img class="grid order-2 sm:pt-5 sm:w-auto w-52 place-self-end" src="./img/pinkcrs.webp" alt="decoración">
@@ -615,6 +614,29 @@
                 reservados.</p>
         </div>
     </div>
+    <div onkeydown="myFunction(event)" id="abc">
+        <div id="popupContact">
+            <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                onload="if(submitted) {div_hide();}"></iframe>
+            <form onsubmit="submitted=true;" target="hidden_iframe"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdZuTncQ9NDNJe4V9Q107trYWKQvWLsxh2Xy2e2kYOw_RDPRg/formResponse"
+                target="blank" id="form" method="post" name="form">
+                <img id="close" onclick="div_hide();closewin();">
+                <h2 class="font-normal text-4xl text-blue-corp">Contactenos</h2>
+                <input size="35" class="mt-5" id="i2 i3" name="entry.781724085" placeholder="Nombre" type="text"><br>
+                <input size="35" class="mt-5" id="i6 i7" name="entry.943721777" placeholder="Email" type="text"><br>
+                <input size="35" class="mt-5" type="text" name="entry.301715168" id="" placeholder="Teléfono"><br>
+                <textarea id="msg" class="mt-5" cols="33" name="entry.2093646709" placeholder="Mensaje"></textarea><br>
+                <button
+                    class="border float-left -ml-4 font-bold mt-5 py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15"
+                    onclick="check_empty();div_hide;" return="false" id="submit">Enviar</button>
+                <button
+                    class="border float-left ml-12 font-bold mt-5 py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15"
+                    onclick="div_hide()" return="false " id="cancel">Cerrar</button>
+            </form>
+        </div>
+    </div>
     <script>
         function more(lista, btn) {
             const list = lista;
@@ -633,6 +655,27 @@
             div.style.display = 'none';
             div2.style.display = 'grid';
         }
+        function check_empty() {
+            if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+                alert("Rellena todos los campos!");
+            } else {
+                document.getElementById('form').submit();
+                div_hide();
+            }
+        }
+        function ddiv_show() {
+            document.getElementById('abc').style.display = "block";
+        }
+        function div_hide() {
+            document.getElementById('abc').style.display = "none";
+        }
+        var boxid = "abc";
+        window.onkeyup = function (event) {
+            if (event.keyCode == 27) {
+                div_hide();
+            }
+        }
+
     </script>
 </body>
 

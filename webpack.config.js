@@ -110,6 +110,7 @@ module.exports = {
             }
         }),
         
+        
         // new BrotliPlugin({
         //     asset: '[path].br[query]',
         //     test: /\.(js|css|html|svg|png|webp)$/,
