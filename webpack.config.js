@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const BrotliPlugin = require('brotli-webpack-plugin');
+//const BrotliPlugin = require('brotli-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
@@ -14,11 +14,12 @@ module.exports = {
     },
     module: {
         rules: [
+
             {
                 test: /\.css$/,
                 use: [
                   MiniCssExtractPlugin.loader,
-                  "css-loader", "postcss-loader",
+                  "css-loader", "postcss-loader","sass-loader",
                   ],
               },
             {

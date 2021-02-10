@@ -240,7 +240,7 @@
                     Si cree que una herramienta software es lo que necesita
                 </li>
             </ul>
-            <button onclick="div_show()" class="border font-bold w-72 sm:w-80  px-2 sm:px-5  xl:mt-5 ml-12 sm:ml-28 xl:ml-0 border-pink-corp sm:mb-1  hover:border-transparent bg-transparent 
+            <button onclick="div_show()" class="border font-bold w-72 sm:w-80 h-20 px-2 sm:px-5  xl:mt-10 ml-12 sm:ml-28 xl:ml-0 border-pink-corp sm:mb-1  hover:border-transparent bg-transparent 
                 hover:bg-hightlight popup  text-pink-corp hover:text-white rounded-full ">
                 <p class="w-56 float-left leading-4.5 sm:leading-5  sm:text-lg"> Cuéntenos su proyecto y
                     trataremos de diseñar la
@@ -252,9 +252,9 @@
                     Si no esta seguro de que la herramienta software sea la solución
                 </li>
             </ul>
-            <button onclick="div_show()" class="border popup  sm:w-80 w-72 font-bold px-2 sm:px-5  xl:mt-5 ml-10 sm:ml-28 xl:ml-0 border-pink-corp mb-1  hover:border-transparent bg-transparent 
-                hover:bg-hightlight  text-pink-corp hover:text-white rounded-full ">
-                <p class="w-56 float-left leading-4.5 sm:leading-5 sm:text-lg -my-10">Cuéntenos su proyecto y <br> le
+            <button onclick="div_show()" class="border font-bold h-20 w-72 sm:w-80  px-2 sm:px-5  xl:mt-10 ml-12 sm:ml-28 xl:ml-0 border-pink-corp sm:mb-1  hover:border-transparent bg-transparent 
+            hover:bg-hightlight popup  text-pink-corp hover:text-white rounded-full">
+                <p class="w-56 float-left leading-4.5 sm:leading-5 sm:text-lg">Cuéntenos su proyecto y <br> le
                     ayudaremos a <br> averiguarlo</p>
                 <p class="float-left font-big text-5xl pb-1 sm:pl-3 sm:-mt-3 mt-0.5  sm:pt-4">>></p>
             </button>
@@ -516,10 +516,10 @@
                         <img class="pt-2" src="./img/telficon.png" alt="teléfono">
                         <p class="font-normal pt-1 pl-2">633 978 686</p>
                     </div>
-                    <div class="pt-2 xl:mt-5 pl-6"><a href="https://twitter.com/rafaelpalominop" target="_blank"
+                    <div class="pt-5 xl:mt-5 pl-6"><a href="https://twitter.com/rafaelpalominop" target="_blank"
                             rel="noopener"><img class="float-left xl:w-8 xl:h-8" src="./img/tweeticon.webp"
                                 alt="Director's twitter"></a><a href="https://es.linkedin.com/in/rafaelpalominoperez/"
-                            target="_blank" rel="noopener"><img class="float-left pl-2 xl:w-8 xl:h-8"
+                            target="_blank" rel="noopener"><img class="float-left pl-2  xl:h-8"
                                 src="./img/linkicon.webp" alt="Director's linkedin"></a>
                     </div>
                 </div>
@@ -541,10 +541,10 @@
                             823 <br> 910
                             052 665 </p>
                     </div>
-                    <div class="pt-2 pl-6 "><a href="https://twitter.com/blendarsys" target="_blank" rel="noopener"><img
+                    <div class="pt-2 ml-6 "><a href="https://twitter.com/blendarsys" target="_blank" rel="noopener"><img
                                 class="float-left xl:w-8 xl:h-8" src="./img/tweeticon.webp"
                                 alt="Company's twitter"></a><a href="https://es.linkedin.com/company/blendarsys"
-                            target="_blank" rel="noopener"><img class="float-left xl:w-8 xl:h-8 pl-2"
+                            target="_blank" rel="noopener"><img class="float-left xl:h-8 pl-2"
                                 src="./img/linkicon.webp" alt="Company's linkedin"></a>
                     </div>
                 </div>
@@ -614,25 +614,33 @@
                 reservados.</p>
         </div>
     </div>
-    <div onkeydown="myFunction(event)" id="abc">
-        <div id="popupContact">
+    <div onkeydown="myFunction(event)" id="contacto">
+        <div id="popupContact ">
             <script type="text/javascript">var submitted = false;</script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                 onload="if(submitted) {div_hide();}"></iframe>
-            <form onsubmit="submitted=true;" target="hidden_iframe"
+            <form onsubmit="submitted=true;" target="hidden_iframe" class=" cont3 px-3"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdZuTncQ9NDNJe4V9Q107trYWKQvWLsxh2Xy2e2kYOw_RDPRg/formResponse"
                 target="blank" id="form" method="post" name="form">
-                <img id="close" onclick="div_hide();closewin();">
                 <h2 class="font-normal text-4xl text-blue-corp">Contactenos</h2>
-                <input size="35" class="mt-5" id="i2 i3" name="entry.781724085" placeholder="Nombre" type="text"><br>
-                <input size="35" class="mt-5" id="i6 i7" name="entry.943721777" placeholder="Email" type="text"><br>
-                <input size="35" class="mt-5" type="text" name="entry.301715168" id="" placeholder="Teléfono"><br>
-                <textarea id="msg" class="mt-5" cols="33" name="entry.2093646709" placeholder="Mensaje"></textarea><br>
+                <input class="mt-5 w-80 p-1" id="i2 i3" name="entry.781724085" placeholder="Nombre" type="text"><br>
+                <input class="mt-5 w-80 p-1" id="i6 i7" name="entry.943721777" placeholder="Email" type="text"><br>
+                <input class="mt-5 w-80 p-1" type="text" name="entry.301715168" id="" placeholder="Teléfono"><br>
+                <textarea id="msg" class="mt-5 w-80 resize-none p-1"  rows="3" name="entry.2093646709" placeholder="Mensaje"></textarea><br>
+                <div class="mt-2">
+                    <input type="checkbox" name="privacidad" id="priv"><label for="priv" class="text-xs">Acepto las condiciones de uso y la <a href="privacy.html" class="text-blue-corp"> 
+                    política de privacidad <br><br></a></label></div>
+                <div class="-mt-4"><input type="checkbox" name="publicidad" id="publi"><label for="publi" class="text-xs leading-1">Acepto que mis datos personales sean utilizados por la empresa 
+                    con el fin de enviarle publicidad relacionada con nuestros productos y servicios por cualquier medio 
+                    (email, teléfono, etc.). Los datos proporcionados se conservarán mientras no solicite el cese 
+                    de los envíos comerciales y se suprimirán cuando los datos ya no sean necesarios para los fines que fueron recogidos.
+                     En el caso de que no acepte que usemos sus datos personales con fines publicitarios no podrá recibir ni promociones
+                     ni informaciones comerciales.</label><br><br></div>
                 <button
-                    class="border float-left -ml-4 font-bold mt-5 py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15"
+                    class="border ml-5 font-bold mt-2 py-1 px-10 border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full"
                     onclick="check_empty();div_hide;" return="false" id="submit">Enviar</button>
                 <button
-                    class="border float-left ml-12 font-bold mt-5 py-1 sm:px-10 px-5 w-72 sm:w-auto object-center block m-auto border-blue-corp hover:border-transparent bg-transparent hover:bg-blue-corp text-blue-corp hover:text-white rounded-full px-15"
+                    class="border ml-12 font-bold mt-2 py-1 px-8 border-gray-500 hover:border-transparent bg-transparent hover:bg-gray-500 text-gray-500 hover:text-white rounded-full"
                     onclick="div_hide()" return="false " id="cancel">Cerrar</button>
             </form>
         </div>
@@ -663,20 +671,37 @@
                 div_hide();
             }
         }
-        function ddiv_show() {
-            document.getElementById('abc').style.display = "block";
+        function div_show() {
+            document.getElementById('contacto').style.display = "block";
         }
         function div_hide() {
-            document.getElementById('abc').style.display = "none";
+            document.getElementById('contacto').style.display = "none";
         }
-        var boxid = "abc";
+        var boxid = "contacto";
         window.onkeyup = function (event) {
             if (event.keyCode == 27) {
                 div_hide();
             }
         }
-
     </script>
+    <!-- <script type="text/javascript">
+        var $zoho=$zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {widgetcode:"252a71c2a56bc7b1c055a3f9675193b88d3ec8e1b20fe8215b8bc7f32599e9e3df76a60cb65b0df5654b471326b6b568", values:{},ready:function()
+        {}};
+        var d=document;
+        s=d.createElement("script");s.type="text/javascript";
+        s.id="zsiqscript";
+        s.defer=true;s.src="https://salesiq.zoho.com/widget";
+        t=d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+        </script> -->
+        <script type="text/javascript">
+            (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+            vgo('setAccount', '611072256');
+            vgo('setTrackByDefault', true);
+        
+            vgo('process');
+        </script>
 </body>
 
 
